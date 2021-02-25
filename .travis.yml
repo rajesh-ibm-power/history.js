@@ -2,9 +2,9 @@ language: node_js
 
 node_js:
    - 10
-   - node
    - lts/*
-
+allow_failures:
+   - node
 arch:
    - amd64
    - ppc64le   
@@ -16,6 +16,3 @@ addons:
        - build-essential 
        - npm 
        - wget 
-       
-script:
-   - cd tests
